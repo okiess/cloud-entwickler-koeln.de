@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Oliver Kießler</title>
+    <link rel="canonical" href="https://cloud-entwickler-koeln.de/impressum.html">
+    <link rel="icon" href="https://cloud-entwickler-koeln.de/favicon1.ico" type="image/x-icon">
+    <meta name="theme-color" content="#0891b2">
+    
+    <style>
+        :root {
+            --primary: #0891b2;
+            --primary-dark: #0e7490;
+            --secondary: #0ea5e9;
+            --bg: #0f172a;
+            --surface: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-muted: #64748b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: white;
+            min-height: 100vh;
+            padding: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .grid-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(8, 145, 178, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(8, 145, 178, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+
+        .container {
+            background: var(--surface);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 2rem;
+            max-width: 48rem;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, white, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+        
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: white;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .back-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .back-btn:hover::before {
+            left: 100%;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(8, 145, 178, 0.3);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 3rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    
+    <div class="container">
+        <h1>Impressum</h1>
+
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <p>
+            Oliver Kießler<br>
+            Sterrenhofweg 31<br>
+            50858 Köln
+        </p>
+
+        <h2>Kontakt</h2>
+        <p>
+            Telefon: +49 (0) 221 95490120<br>
+            <span class="email">e-Mail:
+            <script type="text/javascript">
+                var CodedArray=[109, 97, 105, 108, 64, 111, 108, 105, 118, 101, 114, 45, 107, 105, 101, 115, 115, 108, 101, 114, 46, 100, 101];
+                var encryptedEmail=''
+                for (var i=0; i<CodedArray.length; i++)
+                encryptedEmail+=String.fromCharCode(CodedArray[i])
+                document.write('<a href="mailto:')
+                document.write(encryptedEmail)
+                document.write('">')
+                document.write(encryptedEmail)
+                document.write('</a>')
+            </script>
+            </span>
+        </p>
+
+        <h2>Umsatzsteuer-ID</h2>
+        <p>
+            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+            DE814670789
+        </p>
+
+        <h2>Redaktionell verantwortlich</h2>
+        <p>
+            Oliver Kießler<br>
+            Sterrenhofweg 31<br>
+            50858 Köln
+        </p>
+
+        <h2>Streitschlichtung</h2>
+        <p>
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+            https://ec.europa.eu/consumers/odr/. Unsere E-Mail-Adresse finden Sie oben im Impressum.
+        </p>
+        <p>
+            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+            Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+
+        <div class="footer">
+            <a href="https://cloud-entwickler-koeln.de" class="back-btn">Zurück zur Startseite</a>
+        </div>
+    </div>
+</body>
+</html>
